@@ -1,0 +1,92 @@
+.payment {
+    background-color: white;
+}
+.payment__container > h1 {
+    text-align: center;
+    padding:10px;
+    font-weight: 400;
+    background-color: rgb(234,237,237);
+    border-bottom:1px solid lightgray; 
+
+}
+
+/* In this way we are targeting h1 but with h1 we can 
+also target the container where h1 is  */
+/* .payment__container > h1  and .payment__container h1  both of them is same */
+
+.payment__container > h1 a {
+    text-decoration: none;
+}
+/* we attached hyperlink to the h1 that why it is showing us
+a underline so in the upper given way we can remove that underline */
+
+.payment__section {
+    display: flex;
+    padding:20px;
+    margin:0 20px;
+    border-bottom:1px solid lightgray;
+}
+
+/* Because we are targeting payment__section div so that it will give
+payment__section div padding of 20px and margin left and right of 20 px . 
+it will not gonna be impact the child of a payment__section div .
+if we want to target child of payment__section div then we have to target them 
+separately. */
+
+/* display: flex is targeting the child of payment__section div */
+
+.payment__title {
+    flex:0.2;
+}
+
+/* your .payment__title div will only be take 20% of screen.
+And as you decrease the size of the screen tehn .payment__title will 
+also update itself and only take 20% of the space of the current size of the screen */
+
+.payment__address, .payment__items, .payment__detail {
+    flex:0.8 
+}
+
+/* their both .payment__address and .payment__item will take 80% of space available
+on the screen */
+/* the meaning of flex:1 is that whatever the div containing flex:1 
+take the 100 % of the space available in the screen */
+
+
+/* cardElement will not appear until we will not  give .payment__detail a flex of 0.8  */
+/* this is happening because .payment__detail div is empty so until we will not give it a flex of 0.8
+it will not going to appear on the screen because it is empty  */
+/* But when we put content inside the div the div will dynamically change its size. but until their will 
+nothing inside the div the div will not appear on the screen  */
+/* and the cardElement that we imported from the stripe it is not showing on the screen because
+it is the tendency of the cardElement that it will take the full size of the div and because their is 
+nothing inside the div so that also the cardElement is not getting appear on the scrren  */
+/* But when we are doing .payment__detail {flex:0.8} that mean we are telling the .payment__detail div to take 80% of the space available */
+
+
+/* we are going to style Buy now buttton  */
+
+.payment__detail > form > div > button {
+    background: #f0c14b;
+    border-radius: 2px;
+    width:100%;
+    height:30px;
+    border:1px solid;
+    font-weight:bolder;
+    margin-top:10px;
+    border-color:#a88734 #9c7e31 #846a29;
+    color:#111;
+}
+
+.payment__detail > h3 {
+    padding-bottom:20px;
+
+
+    /* this is not working we have to do somethig else like create 
+    class for h3 then we will be able to manipulate h3 */
+}
+
+.payment__detail > form {
+    max-width:400px;
+}
+

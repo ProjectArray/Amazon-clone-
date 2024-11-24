@@ -1,0 +1,14 @@
+body {
+    background-color:rgb(234,237,237);
+    min-width: 890px;
+
+}
+
+/* Link {
+    text-decoration: none;
+    color:red;      
+} */
+
+
+/*  in this way it is not workig we are not able to target Link from react router dom . Instead to that whe we useed 
+inline styling then done it worked */

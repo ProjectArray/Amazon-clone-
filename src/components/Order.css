@@ -1,0 +1,20 @@
+.order {
+    padding:40px;
+    margin:20px 0;
+    border:1px solid lightgray;
+    background-color: white;
+    position: relative;
+
+}
+
+.order__id {
+    position: absolute;
+    top:40px;       /* earlier order__id have margin top around 100 but now it have 40 only . basically we decrease top margin */
+    right:20px;     /** earlier their also it have to much right margin but now we decreased it by 20 px */
+}
+
+.order__total {
+    font-weight: 500;
+    text-align: right;
+    
+}

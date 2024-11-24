@@ -1,0 +1,16 @@
+/* body {
+    background-color: red;
+} */
+
+
+/* it is giving whole website a red color because we are targeting the body and body include whole website not only 
+single component if we wanted to do that then we have to target only div of specific component for that */
+
+
+.orders {
+    padding: 20px 80px ;
+}
+
+.orders > h1 {
+    margin: 30px 0;
+}

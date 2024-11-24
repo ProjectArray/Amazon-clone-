@@ -1,0 +1,76 @@
+.login {
+    background-color: white;
+    height: 100vh;
+    /* width:50vw;           vh and vw is very much important . vman, vmin ,em,%m all of them is dynamic value but px rem is static value */
+    /* display: flex; */
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    /* Both work fine for centering the element */
+}
+
+.login__logo {
+    margin-top: 20px;
+    margin-bottom:20px;
+    object-fit: contain;
+    width:190px;
+    background-color: white;
+    margin-right: auto;
+    margin-left:auto;
+}
+
+.login__container {
+    width:300px;
+    height:fit-content; 
+    display: flex;
+    flex-direction: column;
+    border-radius:5px;
+    border:1px solid lightgray;
+    padding:20px;
+}
+
+/* height : fit-content with this property div will automatically manage its height according to the content inside that div.
+it will also work if we will not give height to the div because when we will not give height to the any component that mean that component will
+automatically adjust it height according to the content inside that div */
+
+/* A block level element always start with the new line and a block level element always take up the full width available */
+/* An inline does not start on a new line. An inline element only takes up as much width as necessary */
+
+.login__container > h1 {
+    font-weight: 500;
+    margin-bottom:20px;
+}
+.login__container > form > h5 {
+    margin-top: 5px;
+}
+.login__container > form > input {
+    height:30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width:98%;
+}
+.login__container > p {
+    margin-top:15px;
+    font-size: 14px;
+}
+.login__signInButton {
+    background: #f0c14b;
+    border-radius: 2px;
+    width:100%;
+    height:30px;
+    border:1px solid ;
+    margin-top:10px;
+    border-color:#a88734 #9c7e31 #846a29;
+
+}
+
+.login__registerButton {
+    border-radius: 2px;
+    width:100%;
+    height:30px;
+    border:1px solid;
+    margin-top:10px;
+    border-color:darkgray;
+}

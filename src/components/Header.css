@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+}
+.header {
+    display: flex;
+    height:70px;
+    background-color: black;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 100;
+    min-width:890px;
+}
+
+.Amazone_logo img {
+    height: 50px;
+    width: 100px;
+    margin:18px 0 0 10px;
+    object-fit: contain;
+}
+.amazone_search {
+    display: flex;
+    flex:1;
+    align-items: center ;
+    border-radius: 24px;
+    margin-left: 20px;
+}
+
+.header_searchIcon {
+    background-color: orange;
+    padding: 8.6px;
+    height:22px;
+    border-radius:0 5px 5px 0;
+}
+.header_searchInput {
+    
+height:12px;
+padding:14px;
+width:100%;
+border:none;
+min-width: 300px;
+border-radius:5px 0 0 5px;
+
+
+}
+
+.sideElement {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color:white;
+}
+
+.amazone_header {
+    display: flex;
+    justify-content: space-evenly;
+    min-width:400px;
+}
+.header_basket {
+    display: flex;
+    flex-direction: column;
+    color:white;
+    margin-right: 10px;
+    align-items: center;
+}
+.elementTwo {
+    font-size: 22px;
+    font-weight: 800;
+}
+

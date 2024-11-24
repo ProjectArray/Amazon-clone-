@@ -1,0 +1,59 @@
+.checkoutProduct {
+    display: flex;
+}
+
+.checkoutProduct__info {
+    padding-left: 20px;
+}
+
+.checkoutProduct__info > button {
+    background: #f0c14b;
+    border: 1px solid;
+    margin-top:10px;
+    border-color: #a88734 #9c7331 #846a29;
+    color:#111;
+}
+
+.checkoutProduct__image {
+    object-fit: contain;
+    width:180px;
+    height:180px;
+}
+.onlyForImage {
+    width:180px;
+    height:180px;
+    padding:5px;
+}
+/* if we will give any div or image a px value then that image or div will only have that much pixels size it can not be change because px is a static value */
+/* if we will not give any div or image any value then it will follow the dynamic rule */
+/* earlier the lean startup image is smaller then everyimage in our amazone clone so when we are reduce the size of our website because it do not 
+have any background we getting struggling with text  . that why we wrap all the images inside the div and we had give that image a static value so that it 
+will not get smaller than that . div name is onlyForImage*/
+
+.checkoutProduct__rating {
+    display: flex;
+}
+
+.checkoutProduct__title {
+    font-size: 17px;
+    font-weight: 800;
+    padding-top:5px;
+}
+/* 
+p {
+    color:red;
+} */
+/* 
+.Amazone_logo {
+    background-color: red;   
+} */
+
+/* Amazone_logo is a differnt javascript file div but we are able to access it inside the basketItem.css */
+/* in react you just have to make css file for any jvascript file then you just only have to import that css file inside your javascript where ever you wanted to use */
+/* then you can start writing css for that specific file and you can also trigger the  another file component by that  css file 
+
+Just make the css file and import it inside your app anywhere and start writing css for your app any component it will work
+
+you can also create the separate css file for your each app component you just only have to import it inside any file of  your app and it wil work
+but good practice is that you should import the css file inside that javascript file for that you had made that css file.s
+*/
